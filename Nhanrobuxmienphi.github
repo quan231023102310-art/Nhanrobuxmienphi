@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Nhập 2 Ô</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border: 2px solid #999;
+            border-radius: 8px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Nhập mật khẩu</h2>
+
+<input type="text" id="box1" placeholder="Nhập ô 1">
+<input type="text" id="box2" placeholder="Nhập ô 2">
+
+<button onclick="sendData()">Gửi</button>
+
+<script>
+function sendData() {
+    const a = document.getElementById("box1").value;
+    const b = document.getElementById("box2").value;
+
+    alert("Bạn đã nhập:\nÔ 1: " + a + "\nÔ 2: " + b);
+}
+</script>
+
+</body>
+</html>
